@@ -164,8 +164,8 @@ export default function CreditTracker({ credits, userState, onToggleCredit }) {
 
   // Monthly stats
   const monthlyStats = useMemo(() => {
-    const total = monthly.reduce((s, c) => s + c.maxAmount, 0);
-    const used = monthly.filter(c => c.used).reduce((s, c) => s + c.maxAmount, 0);
+    const total = monthly.reduce((s, c) => s + (c.maxAmount || 0), 0);
+    const used = monthly.filter(c => c.used).reduce((s, c) => s + (c.maxAmount || 0), 0);
     return { total, used, remaining: total - used };
   }, [monthly]);
 

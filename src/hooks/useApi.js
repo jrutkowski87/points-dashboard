@@ -38,6 +38,9 @@ function migrateState(s) {
   if (!out.manualSpend) {
     out = { ...out, manualSpend: getDefaultState().manualSpend };
   }
+  if (!out.transferBonuses) {
+    out = { ...out, transferBonuses: [] };
+  }
   return out;
 }
 

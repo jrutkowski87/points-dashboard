@@ -125,7 +125,7 @@ function NumInput({ value, onChange, prefix }) {
 }
 
 export default function WeeklyUpdate({ userState, onUpdateState, credits, onToggleCredit }) {
-  const { toast } = useToast();
+  const toast = useToast();
 
   const [balances, setBalances] = useState(() => {
     const pts = userState?.points || {};
