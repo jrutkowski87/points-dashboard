@@ -1,0 +1,23 @@
+{
+  "name": "Points Dashboard",
+  "short_name": "Points",
+  "description": "Personal travel points and credit card command center",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#060a1a",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
